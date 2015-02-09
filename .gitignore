@@ -6,6 +6,7 @@ dist
 .sass-cache
 bower_components
 app/libs/bower
+backup
 
 # Compiled source #
 ###################

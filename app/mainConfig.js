@@ -5,7 +5,8 @@ require.config({
   paths: {
     'jquery': 'libs/bower/jquery/dist/jquery',
     'underscore': 'libs/bower/underscore/underscore',
-    'angular': 'libs/bower/angular/angular'
+    'angular': 'libs/bower/angular/angular',
+    'angularRoute' : 'libs/bower/angular-route/angular-route'
   },
 
   map: {
@@ -26,6 +27,9 @@ require.config({
     'angular': {
       deps: ['jquery'],
       exports: 'angular'
+    },
+    'angularRoute': {
+      deps: ['angular']
     }
   }
 });

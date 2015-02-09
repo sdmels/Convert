@@ -126,9 +126,18 @@ body {
 
 .mastfoot {
   color: #999;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  border-top: 1px solid;
   /* IE8 proofing */
 
   color: rgba(255, 255, 255, .5);
+
+}
+.mastfoot .inner {
+  padding: 10px 10px 0px 10px;
 }
 /*
  * Affix and center
