@@ -18,7 +18,8 @@ define(['angular', 'angularRoute'],
     app.controller('convertCtrl', function($scope) {
       console.debug('covert controller');
       $scope.model = {};
-      $scope.model.category = ['Temperatures', 'Weight', 'Length', 'Area','Volume','Speed','Time'];
+      $scope.model.categories = ['Temperatures', 'Weight', 'Length', 'Area','Volume','Speed','Time'];
+      $scope.model.currentCategory = '';
     });
 
     app.controller('contactCtrl', function($scope) {
@@ -37,6 +38,7 @@ define(['angular', 'angularRoute'],
     });
 
     app.config(function($routeProvider, $locationProvider) {
+//      $locationProvider.hashPrefix('!');
       $routeProvider.when('/', {
         templateUrl: 'partial/home.html',
         controller: 'homeCtrl'

@@ -3,7 +3,10 @@
 
   <div class="form-group">
     <div class="col-sm-offset-9 col-sm-3 col-xs-12">
-      <select class="form-control" ng-options="category as label for category in model.categories"></select>
+      <select class="form-control" ng-model="currentCategory">
+        <option value="">--Select--</option>
+        <option ng-repeat="category in model.categories">{{category}}</option>
+      </select>
     </div>
   </div>
 
